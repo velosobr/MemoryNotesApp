@@ -7,23 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ragnlabs.memorynotesapp.R
 
-
-class ListFragment : Fragment() {
+class NoteFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return inflater.inflate(R.layout.fragment_note, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
-    }
-
-    private fun goToNoteDetails(id: Long = 0L) {
-
-    }
 }
